@@ -5,6 +5,8 @@
         <variable
             name="unit"
             type="ru.devsokovix.databindingtest.Unit" />
+        
+        <import type="android.view.View"/>
     </data>
 
     <LinearLayout
@@ -35,6 +37,23 @@
             android:layout_marginTop="25dp"
             android:text='@{"WIS " + unit.wis}'
             android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/cdarPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text='@{"Point " + unit.charPoint}'
+            android:visibility="@{unit.charPoint > 0 ? View.VISIBLE : View.GONE}"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text='@{"Sum  " + (unit.str + unit.dex + unit.wis)}'
+            android:textSize="24sp" />
 
     </LinearLayout>
 

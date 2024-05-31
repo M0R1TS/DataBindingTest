@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding: SampleBinding = DataBindingUtil.setContentView(this, R.layout.sample)
-        binding.unit = Unit(5,6,12)
+        binding.unit = Unit(5,6,12, 52)
     }
 }
