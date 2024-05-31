@@ -55,6 +55,13 @@
             android:text='@{"Sum  " + (unit.str + unit.dex + unit.wis)}'
             android:textSize="24sp" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:onClick="@{() -> unit.reset()}"
+            android:text="Reset" />
+
     </LinearLayout>
 
 </layout>
