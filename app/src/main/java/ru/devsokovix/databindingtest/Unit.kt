@@ -1,3 +1,3 @@
 package ru.devsokovix.databindingtest
 
-data class Unit(var str: Int, var dex: Int, var wis: Int)
+data class Unit(var str: Int, var dex: Int, var wis: Int, var charPoint: Int)
