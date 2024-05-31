@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="unit"
+            type="ru.devsokovix.databindingtest.Unit" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"STR " + unit.str}'
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/dex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text='@{"DEX " + unit.dex}'
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text='@{"WIS " + unit.wis}'
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+</layout>
